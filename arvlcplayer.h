@@ -7,7 +7,7 @@
 class ARVlcPlayer : public VideoPlayer
 {
 public:
-    ARVlcPlayer(QObject *parent);
+    ARVlcPlayer(QObject *parent = nullptr);
 
     int  openPlayer();
     int  closePlayer();

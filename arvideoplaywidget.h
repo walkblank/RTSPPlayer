@@ -27,7 +27,7 @@ private:
     ARVideoWindow *videowind;
 
     void initUI();
-//    void initContent();
+    void initContent();
     QTimer *timer;
 };
 

@@ -32,6 +32,8 @@ MainWindow::MainWindow(QWidget *parent)
     player = new ARVideoPlayer();
     player->setMedia(media);
 
+    vPlayer = new ARVlcPlayer();
+    vPlayer->setMedia(media);
 
     for(int i = 0; i < 16; i ++)
     {
@@ -70,4 +72,9 @@ void MainWindow::on_stopBtn_clicked()
 {
     foreach(ARVideoPlayWidget *vwidget, playWidgetList)
         vwidget->stopPlay();
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+   vPlayer->openPlayer();
 }
