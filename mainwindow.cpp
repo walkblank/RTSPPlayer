@@ -27,7 +27,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     ARMedia media;
     media.type =  MEDIA_TYPE_NETWORK;
-    media.resource.path = mediaSrcList[0].toStdString();
+    media.resource.path = mediaSrcList[7].toStdString();
 
     player = new ARVideoPlayer();
     player->setMedia(media);

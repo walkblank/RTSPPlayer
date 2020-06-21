@@ -11,14 +11,15 @@ CONFIG += c++11
 DEFINES += QT_DEPRECATED_WARNINGS
 
 #ffmpeg libs
-INCLUDEPATH += ../ffmpeg-dev/ffmpeg-4.2.3-win32-dev/include
-LIBS += -L../ffmpeg-dev/ffmpeg-4.2.3-win32-dev/lib
+INCLUDEPATH += ../3rd/ffmpeg-dev/ffmpeg-4.2.3-win32-dev/include
+LIBS += -L../3rd/ffmpeg-dev/ffmpeg-4.2.3-win32-dev/lib
+LIBS += -L../3rd/ffmpeg-dev/ffmpeg-4.2.3-win32-shared/bin
 LIBS += -lavformat -lavcodec -lavutil -lswscale -lavdevice
 
 #libvlc
-INCLUDEPATH += ../vlc-3.0.8/sdk/include
-LIBS += -L../vlc-3.0.8/lib
-LIBS += -L../vlc-3.0.8
+INCLUDEPATH += ../3rd/vlc-3.0.8/sdk/include
+LIBS += -L../3rd/vlc-3.0.8/lib
+LIBS += -L../3rd/vlc-3.0.8
 LIBS += -llibvlc -llibvlccore
 
 # You can also make your code fail to compile if it uses deprecated APIs.
